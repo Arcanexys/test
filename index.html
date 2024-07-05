@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interaction Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="left-column">
+        <h2>API Controls</h2>
+        <label for="instanceId">Instance ID:</label>
+        <input type="text" id="instanceId">
+        <label for="apiToken">API Token:</label>
+        <input type="text" id="apiToken">
+        <button onclick="getSettings()">Get Settings</button>
+        <button onclick="getStateInstance()">Get State Instance</button>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber">
+        <label for="textMessage">Text Message:</label>
+        <input type="text" id="textMessage">
+        <button onclick="sendMessage()">Send Message</button>
+        <label for="phoneNumberFile">Phone Number (File):</label>
+        <input type="text" id="phoneNumberFile">
+        <label for="urlFile">File URL:</label>
+        <input type="text" id="urlFile">
+        <button onclick="sendFileByUrl()">Send File by URL</button>
+    </div>
+    <div class="right-column">
+        <h2>Ответ</h2>
+        <textarea id="responseTextArea" class="readonly-textarea" readonly></textarea>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
